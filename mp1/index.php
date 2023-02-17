@@ -64,7 +64,8 @@
             } else {
             $annualSalary = $total * 12;
             }
-            echo $annualSalary;
+            $formattedSalary = number_format($annualSalary, 2);
+            echo $formattedSalary;
 
             echo "<p>Est. Annual Tax: </p> ";
             $annualTax = 0;
@@ -72,24 +73,30 @@
             echo "No tax due";
             } else if ($annualSalary <= 400000) {
             $annualTax = ($annualSalary - 250000) * 0.2;
-            echo $annualTax;
+            $formattedTax = number_format($annualTax, 2);
+            echo $formattedTax;
             } else if ($annualSalary <= 800000) {
             $annualTax = 30000 + (($annualSalary - 400000) * 0.25);
-            echo $annualTax;
+            $formattedTax = number_format($annualTax, 2);
+            echo $formattedTax;
             } else if ($annualSalary <= 2000000) {
             $annualTax = 130000 + (($annualSalary - 800000) * 0.3);
-            echo $annualTax;
+            $formattedTax = number_format($annualTax, 2);
+            echo $formattedTax;
             } else if ($annualSalary <= 8000000) {
             $annualTax = 490000 + (($annualSalary - 2000000) * 0.32);
-            echo $annualTax;
+            $formattedTax = number_format($annualTax, 2);
+            echo $formattedTax;
             } else {
             $annualTax = 2410000 + (($annualSalary - 8000000) * 0.35);
-             echo $annualTax;
+            $formattedTax = number_format($annualTax, 2);
+            echo $formattedTax;
             }
 
              echo "<p>Est. Monthly Tax: </p> ";
              $monthlyTax = $annualTax / 12;
-             echo $monthlyTax;
+             $formattedTax = number_format($monthlyTax, 2);
+             echo $formattedTax;
             }
         ?>
     </div>

@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(150, 240, 213);
+}
+
 p, button, label,legend,input{
     font-family: 'Varela Round', sans-serif; 
 }
@@ -62,4 +66,5 @@ button{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
+    background-color: rgb(150, 240, 213);
 }
