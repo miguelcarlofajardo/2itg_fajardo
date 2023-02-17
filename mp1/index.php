@@ -68,7 +68,7 @@
             $annualSalary = $total * 12;
             }
             $formattedSalary = number_format($annualSalary, 2);
-            echo "<div class=\"results\">$formattedSalary</div>";
+            echo "<div class=\"results\">₱$formattedSalary</div>";
 
             echo "<p>Est. Annual Tax: </p> ";
             $annualTax = 0;
@@ -77,29 +77,29 @@
             } else if ($annualSalary <= 400000) {
             $annualTax = ($annualSalary - 250000) * 0.2;
             $formattedTax = number_format($annualTax, 2);
-            echo "<div class=\"results\">$formattedTax</div>";
+            echo "<div class=\"results\">₱$formattedTax</div>";
             } else if ($annualSalary <= 800000) {
             $annualTax = 30000 + (($annualSalary - 400000) * 0.25);
             $formattedTax = number_format($annualTax, 2);
-            echo "<div class=\"results\">$formattedTax</div>";
+            echo "<div class=\"results\">₱$formattedTax</div>";
             } else if ($annualSalary <= 2000000) {
             $annualTax = 130000 + (($annualSalary - 800000) * 0.3);
             $formattedTax = number_format($annualTax, 2);
-            echo "<div class=\"results\">$formattedTax</div>";
+            echo "<div class=\"results\">₱$formattedTax</div>";
             } else if ($annualSalary <= 8000000) {
             $annualTax = 490000 + (($annualSalary - 2000000) * 0.32);
             $formattedTax = number_format($annualTax, 2);
-            echo "<div class=\"results\">$formattedTax</div>";
+            echo "<div class=\"results\">₱$formattedTax</div>";
             } else {
             $annualTax = 2410000 + (($annualSalary - 8000000) * 0.35);
             $formattedTax = number_format($annualTax, 2);
-            echo "<div class=\"results\">$formattedTax</div>";
+            echo "<div class=\"results\">₱$formattedTax</div>";
             }
 
              echo "<p>Est. Monthly Tax: </p> ";
              $monthlyTax = $annualTax / 12;
              $formattedTax = number_format($monthlyTax, 2);
-             echo "<div class=\"results\">$formattedTax</div>";
+             echo "<div class=\"results\">₱$formattedTax</div>";
             }
         ?>
     </div>
