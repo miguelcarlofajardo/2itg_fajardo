@@ -1,0 +1,65 @@
+p, button, label,legend,input{
+    font-family: 'Varela Round', sans-serif; 
+}
+
+.calculator-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: ridge;
+    font-size: 50px;
+    border-radius: 25px;
+}
+
+.salary-label, .result-label{
+    font-size: 30px;
+}
+
+fieldset{
+    display: inline-block;
+    width: 10cm;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+legend{
+    font-size: 30px;
+}
+
+label,input{
+    font-size: 20px;
+}
+
+button{
+    font-size: 20px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-style: solid;
+    margin-left: 250px;
+    border-radius: 25px;
+}
+
+.container .card{
+    width: 400px;
+    position:relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 2px 10px;
+
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
