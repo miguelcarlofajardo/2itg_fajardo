@@ -20,13 +20,14 @@ p, button, label,legend,input{
 
 .salary-label, .result-label{
     font-size: 30px;
+    background-color:  rgb(240, 150, 150);
 }
 
 fieldset{
     display: inline-block;
     width: 10cm;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 legend{
@@ -45,7 +46,7 @@ label,input,button,p{
     width:500px;
     flex-wrap: wrap;
     padding: 30px;
-    border-style: solid;
+    border-style: double;
     margin-left: 250px;
     border-radius: 25px;
 }
@@ -68,4 +69,14 @@ label,input,button,p{
 
 .radio-item{
     background-color: rgb(240, 150, 150);
+}
+
+p{
+    background-color:  rgb(230, 177, 177);
+}
+
+.results{
+    background-color:  rgb(240, 150, 150);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px; 
 }
